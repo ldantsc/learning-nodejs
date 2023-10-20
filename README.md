@@ -1,16 +1,19 @@
-## Curso de Node.JS por [Victor Lima](https://www.youtube.com/@GuiadoProgramador)
+# Curso de Node.JS por [Victor Lima](https://www.youtube.com/@GuiadoProgramador)
 
-##Anotações:
+## Anotações:
 
 Após a instalação do MySql, indicar a pasta bin do MySql na variavel de ambiente do tipo Path
 
-- Abrir servidor no MySql cmd
+Abrir servidor no MySql cmd
 
-paramentro 1: -h localhost: indica em que servidor quer se conectar, no caso servidor local
+- paramentro 1 
+-h localhost: indica em que servidor quer se conectar, no caso servidor local
 
-parametro 2: -u root: indica o usuário padrão
+- parametro 2
+ -u root: indica o usuário padrão
 
-parametro 3: -p pedir a senha
+- parametro 3
+ -p pedir a senha
 
 ```cmd
 
@@ -34,11 +37,11 @@ CREATE DATABASE;
 
 ```
 
-Criando tabelas
+- Criando tabelas
 
 CREATE TABLE usuário = Criar tabela usuarios
 
-Colunas...
+- Colunas...
 
 nome VARCHAR(50); = definir nome, tipo, dentro do tipo entre parenteses é o número de caracteres que o banco aceita, o ponto e virgula indica que criaremos outra coluna
 
@@ -54,7 +57,7 @@ CREATE TABLE usuarios(
 
 ```
 
-inserir dados... 
+- Inserir dados... 
 
 ```sql
 
