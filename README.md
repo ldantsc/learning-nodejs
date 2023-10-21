@@ -68,3 +68,64 @@ INSERT INTO usuarios(nome, email, idade) VALUES(
 );
 
 ```
+- Consulta...
+
+````sql
+
+SELECT * FROM usuarios;
+
+````
+
+- Especificar consulta com Where 
+todos da coluna usuarios que tenham menos que 15 anos de idade
+
+```sql
+
+SELECT * FROM usuarios WHERE idade < 15;
+
+```
+
+- Todos da coluna usuarios que tenham o nome Lucas
+
+```sql
+
+SELECT * FROM usuarios WHERE nome = "Lucas Dantas";
+
+```
+
+- Deletar registros
+
+Dessa forma deleta todos os registros da tabela
+(cuidado)
+
+```sql
+
+DELETE FROM usuarios;
+
+```
+
+Utilizar para deletar um registro especifico
+
+```sql
+
+DELETE FROM usuarios WHERE nome = "Lucas Dantas";
+
+```
+
+- Atualizar campo 
+Dessa forma atualiza toda a tabela
+(cuidado)
+
+```sql
+
+UPDATE ususarios SET nome = "nome teste";
+
+```
+
+Utilizar para alterar um registro
+
+```sql
+
+UPDATE ususarios SET nome = "nome teste" WHERE nome = "Diogo Brito";
+
+```

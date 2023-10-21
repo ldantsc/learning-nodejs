@@ -5,7 +5,9 @@ CREATE TABLE usuarios(
 );
 
 INSERT INTO usuarios(nome, email, idade) VALUES(
-    "Lucas Dantas", 
+    "Robson Ambrosio", 
     "email@test.com",
-    8
+    90
 );
+
+SELECT * FROM usuarios WHERE idade < 15;
