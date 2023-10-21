@@ -28,7 +28,6 @@ Comando para mostrar os bancos de dados no mysql
 SHOW DATABASES;
 
 ```
-
 Criar um novo banco de dados
 
 ```sql
@@ -127,5 +126,60 @@ Utilizar para alterar um registro
 ```sql
 
 UPDATE ususarios SET nome = "nome teste" WHERE nome = "Diogo Brito";
+
+```
+
+## Sequelize
+
+- ORM é um sistema que abstrai um banco de dados, facilita o trabalho com banco de dados
+
+```
+
+npm install --save sequelize
+
+npm install --save mysql2
+
+```
+
+- Ultilizando o Sequelize
+
+importar e instanciar o Sequelize
+
+parametro 1 = nome do banco
+parametro 2 = username
+parametro 3 = password
+parametro 4 = abrir chaves (json) passando o servidor (no caso localhost) e dialect para indicar qual tipo de banco de dados esta trabalhando, pois ele trabalha com varios tipos de banco de dados
+
+```js
+
+const Sequelize = require("sequelize");
+const sequelize = new Sequelize("test", "root", "147891212", {
+    host: "localhost",
+    dialect: "mysql"
+})
+
+```
+- Models
+
+models = forma de criar tabelas SQL através do Nodejs
+através do método define() o modelo de tabela
+primeiro parametro = nome da tabela
+segundo parametro = montagem da tabela
+
+- ex
+
+Abaixo estamos definindo 2 campos, um campo de titulo e um campo de texto
+
+
+```js
+
+const Postagem = sequelize.define("postagens", {
+    titulo: {
+        type: Sequelize.STRING
+    },
+    conteudo: {
+        type: Sequelize.TEXT
+    }
+})
 
 ```
