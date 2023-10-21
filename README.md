@@ -2,6 +2,12 @@
 
 ## Anotações:
 
+
+Nodemon para não precisar reiniciar o servidor após mudanças no terminal
+
+___________________
+
+
 Após a instalação do MySql, indicar a pasta bin do MySql na variavel de ambiente do tipo Path
 
 Abrir servidor no MySql cmd
@@ -169,6 +175,8 @@ segundo parametro = montagem da tabela
 - ex
 
 Abaixo estamos definindo 2 campos, um campo de titulo e um campo de texto
+e definindo o tipo de dados com Sequelize
+.TEXT sendo ilimitado o numero de caracteres
 
 
 ```js
@@ -181,5 +189,13 @@ const Postagem = sequelize.define("postagens", {
         type: Sequelize.TEXT
     }
 })
+
+```
+
+Função que sincroniza/gerar o Model ao banco de dados
+
+```js
+
+Postagem.sync({force: true})
 
 ```
