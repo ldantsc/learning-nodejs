@@ -28,3 +28,30 @@ const Postagem = sequelize.define("postagens", {
         type: Sequelize.TEXT
     }
 })
+
+Postagem.create({
+    titulo: "Um titulo",
+    conteudo: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, reprehenderit!"
+})
+
+const Usuario = sequelize.define("usuarios", {
+    nome: {
+        type: Sequelize.STRING
+    },
+    sobrenome: {
+        type: Sequelize.STRING
+    },
+    idade: {
+        type: Sequelize.INTEGER
+    },
+    email: {
+        type: Sequelize.STRING
+    }  
+})
+
+Usuario.create({
+    nome: "Lucas",
+    sobrenome: "Dantas",
+    idade: 200,
+    email: "test@test.com"
+})
