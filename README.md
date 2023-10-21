@@ -3,7 +3,7 @@
 ## Anotações:
 
 
-Nodemon para não precisar reiniciar o servidor após mudanças no terminal
+Nodemon = biblioteca para não precisar reiniciando o servidor após mudanças no código
 
 ___________________
 
